@@ -1,0 +1,110 @@
+/* Prevent side cut */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f4;
+    overflow-x: hidden;
+}
+
+/* Message */
+p {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Heading (card top) */
+h2 {
+    max-width: 350px;
+    width: 100%;
+    margin: 60px auto 0;
+    background: #ffffff;
+    padding: 20px 30px 10px;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Form (card body) */
+form {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px 30px 30px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 3px 0 2px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* 🔥 Tighten ONLY password → forgot password */
+input[type="password"] {
+    margin-bottom: 6px;
+}
+
+/* Forgot password (close + left aligned) */
+form a:first-of-type {
+    display: inline-block;
+    margin-top: 1px;
+    padding-top: 0;
+    font-size: 13px;
+    color: #1a73e8;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+/* Login button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #1a73e8;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1669c1;
+}
+
+/* Signup link bottom */
+form a:last-of-type {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+/* Hover */
+form a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile safety */
+@media (max-width: 420px) {
+    h2,
+    form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

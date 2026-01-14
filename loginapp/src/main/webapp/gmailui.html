@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mail UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <span class="logo">Mail</span>
+    <input class="search" type="text" placeholder="Search mail">
+</header>
+
+<div class="app">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+        <button class="compose">Compose</button>
+        <ul>
+            <li class="active" onclick="showSection('inbox')">Inbox</li>
+            <li onclick="showSection('starred')">Starred</li>
+            <li onclick="showSection('sent')">Sent</li>
+            <li onclick="showSection('drafts')">Drafts</li>
+        </ul>
+    </aside>
+
+    <!-- MIDDLE + RIGHT CONTENT -->
+    <main class="content">
+
+        <!-- INBOX -->
+        <div id="inbox" class="section active">
+            <h2>Inbox</h2>
+            <p>This is Inbox content</p>
+        </div>
+
+        <!-- STARRED -->
+        <div id="starred" class="section">
+            <h2>Starred</h2>
+            <p>This is Starred content</p>
+        </div>
+
+        <!-- SENT -->
+        <div id="sent" class="section">
+            <h2>Sent</h2>
+            <p>This is Sent content</p>
+        </div>
+
+        <!-- DRAFTS -->
+        <div id="drafts" class="section">
+            <h2>Drafts</h2>
+            <p>This is Drafts content</p>
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
